@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Marcos Davi | Portfólio</title>
+
+  <link rel="stylesheet" href="marcos.css">
+  <script src="java.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="topo">
+    <a class="logo" href="#inicio">MD<span>.</span></a>
+
+    <button
+      id="menuBotao"
+      class="menu-botao"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav id="navegacao">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Início -->
+    <section class="hero secao" id="inicio">
+
+      <div class="hero-texto">
+        <p class="etiqueta">PORTFÓLIO • DESENVOLVIMENTO WEB</p>
+
+        <h1>
+          Transformando ideias em
+          <span>experiências digitais.</span>
+        </h1>
+
+        <p id="saudacao">Olá! Seja bem-vindo.</p>
+
+        <p>
+          Sou Marcos Davi, estudante de informática.
+          Estou aprendendo a criar sites modernos e funcionais.
+        </p>
+
+        <a class="botao" href="#projetos">
+          Ver meus projetos ↓
+        </a>
+      </div>
+
+      <div class="perfil">
+        <img
+          src="image.png"
+          alt="Foto de perfil de Marcos Davi"
+        >
+
+        <h2>Marcos Davi</h2>
+
+        <p>Estudante de desenvolvimento de sites</p>
+
+        <span class="status">
+          ● Aprendendo e evoluindo
+        </span>
+      </div>
+
+    </section>
+
+    <!-- Sobre mim -->
+    <section class="secao sobre" id="sobre">
+
+      <p class="etiqueta">01 / SOBRE MIM</p>
+
+      <h2>
+        Curiosidade que vira
+        <span>código.</span>
+      </h2>
+
+      <p>
+        Sou estudante e estou desenvolvendo meus conhecimentos
+        em HTML, CSS e JavaScript. Meu objetivo é aprender a criar
+        projetos úteis, organizados e com uma boa experiência
+        para quem utiliza.
+      </p>
+
+    </section>
+
+    <!-- Habilidades -->
+    <section class="secao" id="habilidades">
+
+      <p class="etiqueta">02 / HABILIDADES</p>
+
+      <h2>O que estou aprendendo</h2>
+
+      <div class="skills-grid">
+
+        <article class="card">
+          <h3>HTML5</h3>
+
+          <p>Estrutura de páginas e conteúdo.</p>
+
+          <div class="barra">
+            <span style="width: 80%"></span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>CSS3</h3>
+
+          <p>Estilização, layouts e responsividade.</p>
+
+          <div class="barra">
+            <span style="width: 70%"></span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>JavaScript</h3>
+
+          <p>Lógica e interatividade nos sites.</p>
+
+          <div class="barra">
+            <span style="width: 45%"></span>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Projetos -->
+    <section class="secao projetos" id="projetos">
+
+      <p class="etiqueta">03 / PROJETOS</p>
+
+      <h2>Meus projetos</h2>
+
+      <div class="filtros">
+        <button
+          class="filtro ativo"
+          data-filtro="todos"
+          aria-pressed="true"
+        >
+          Todos
+        </button>
+      </div>
+
+      <div class="projetos-grid">
+
+        <!-- Projeto 1 -->
+        <article
+          class="card projeto-card"
+          data-categoria="html"
+        >
+
+          <div class="projeto-imagem">🌐</div>
+
+          <h3>Projeto desenvolvido com meus amigos no Figma</h3>
+
+          <p>
+            Projeto criado em grupo para praticar o planejamento
+            e o desenvolvimento de interfaces.
+          </p>
+
+          <a
+            href="https://www.figma.com/design/pXbB675hnIyuwTubJLwXvO/Trabalho-II?node-id=0-1&t=pHTEQzxw7a0wBIhl-0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Clique aqui para visualizar
+          </a>
+
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Figma</span>
+          </div>
+
+        </article>
+
+        <!-- Projeto 2 -->
+        <article
+          class="card projeto-card"
+          data-categoria="html"
+        >
+
+          <div class="projeto-imagem">🌱</div>
+
+          <h3>Cidade e meio ambiente</h3>
+
+          <p>
+            Atividade sobre a cidade e o meio ambiente,
+            abordando questões ambientais e sustentabilidade.
+          </p>
+
+          <a
+            href="https://canva.link/0vad8vcu6gdo2o4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Clique aqui para visualizar
+          </a>
+
+          <div class="tags">
+            <span>Meio ambiente</span>
+            <span>Canva</span>
+          </div>
+
+        </article>
+
+      </div>
+
+      <p class="nota"></p>
+
+    </section>
+
+    <!-- Contato -->
+    <section class="secao contato" id="contato">
+
+      <p class="etiqueta">04 / CONTATO</p>
+
+      <h2>Entre em contato</h2>
+
+      <form id="formContato" novalidate>
+
+        <label for="nome">Nome</label>
+
+        <input
+          id="nome"
+          type="text"
+          placeholder="Digite seu nome"
+        >
+
+        <small class="erro" id="erroNome"></small>
+
+        <label for="email">E-mail</label>
+
+        <input
+          id="email"
+          type="email"
+          placeholder="voce@exemplo.com"
+        >
+
+        <small class="erro" id="erroEmail"></small>
+
+        <label for="mensagem">Mensagem</label>
+
+        <textarea
+          id="mensagem"
+          rows="4"
+          placeholder="Escreva pelo menos 20 caracteres"
+        ></textarea>
+
+        <small class="erro" id="erroMensagem"></small>
+
+        <label class="consentimento">
+          <input id="consentimento" type="checkbox">
+          Concordo com o uso dos dados para responder à mensagem.
+        </label>
+
+        <small
+          class="erro"
+          id="erroConsentimento"
+        ></small>
+
+        <button class="botao" type="submit">
+          Validar formulário
+        </button>
+
+        <p
+          id="resultadoForm"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+
+    <p>
+      © <span id="anoAtual"></span>
+      Marcos Davi — Portfólio pessoal
+    </p>
+
+    <a href="#inicio">Voltar ao topo ↑</a>
+
+  </footer>
+
+</body>
+</html>
